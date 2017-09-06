@@ -1,0 +1,146 @@
+.photo-album-folders {
+  // padding: 20px 20px 0 20px;
+  border-bottom: 1px solid $light-grey;
+  margin: 10px 0;
+  max-height: 236px;
+  padding: 0 10px;
+  overflow: auto;
+}
+
+.photo-album-folder {
+  display: inline-block;
+  height: auto;
+  padding: 8px 10px 12px 10px;
+  text-align: center;
+  width: 90px;
+  cursor: pointer;
+
+  &:hover {
+    .folder {
+      // transform: scale(1.05, 1.05);
+    }
+
+    .delete-album {
+      display: inline-block;
+    }
+
+    .folder-title {
+      color: $black;
+    }
+  }
+
+  .folder {
+    background-image: url('../images/folder-grey.png');
+    background-size: cover;
+
+    height: 65px;
+    margin: 0 auto;
+    position: relative;
+    transition: all ease .15s;
+    width: 85px;
+
+    .mdl-button {
+      left: 24px;
+      position: absolute;
+      top: 21px;
+    }
+
+    img {
+      position: absolute;
+      width: 55px;
+      height: 35px;
+
+      &:nth-last-child(3) {
+        top: 15px;
+        left: 10px;
+      }
+      &:nth-last-child(2) {
+        top: 20px;
+        left: 15px
+      }
+      &:nth-last-child(1) {
+        top: 25px;
+        left: 20px;
+      }
+    }
+  }
+
+  .folder-last {
+    background-image: url('../images/folder-grey.png');
+  }
+
+  .folder-title {
+    color: $grey1;
+    padding-top: 10px;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 40px;
+  }
+
+  &.active {
+    border-bottom: 2px solid $primary-color;
+
+    .folder-title {
+      color: $primary-color;
+      font-weight: 500;
+    }
+
+    .folder {
+      background-image: url('../images/Folder-selected.png');
+    }
+  }
+
+  .mod-folder-1 {
+    height: 70px;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+}
+
+.delete-album {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 4;
+}
+
+.carousel-container {
+  display: flex;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+
+  .carousel-left,
+  .carousel-right {
+    align-items: center;
+    display: flex;
+    user-select: none;
+
+    .material-icons {
+      font-size: 50px;
+      color: rgb(220, 220, 220);
+      cursor: pointer;
+    }
+  }
+
+  .carousel-left {
+    padding-right: 20px;
+  }
+
+  .carousel-right {
+    padding-left: 20px;
+  }
+}
+
+.add-photos-to-album {
+  position: absolute;
+  right: 0;
+  padding: 25px;
+  top: 0;
+}

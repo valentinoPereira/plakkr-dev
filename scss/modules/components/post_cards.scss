@@ -1,0 +1,139 @@
+.plakkr_post_cards {
+  >a {
+    min-height: 150px;
+  }
+
+  .mdl-card__title{
+    padding: 0;
+    position: relative;
+  }
+
+  .plakkr_post_cards_image{
+    // @extend %crisp-image;
+    width: 100%;
+  }
+
+  .post-hits {
+    background: transparent url('../images/50x50_red.png') no-repeat;
+    background-position: -5px -5px;
+    background-size: 40px;
+    bottom: 8px;
+    color: $white;
+    height: 30px;
+    position: absolute;
+    right: 8px;
+    width: 30px;
+
+    span {
+      font-size: 13px;
+      margin-top: 6px;
+    }
+  }
+
+  .post_info_icons {
+    color: $grey1;
+    float: right;
+    font-size: 14px;
+    line-height: 1;
+
+    .material-icons {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1;
+      padding: 8px;
+    }
+  }
+
+  .media {
+    padding: 5px;
+
+    .media-object {
+      border: 2px solid $light-grey;
+      height: 48px;
+      margin-top: 8px;
+      width: 48px;
+    }
+
+    .media-left {
+      float: left;
+    }
+
+    .media-body {
+      display: inline-block;
+    }
+
+    .media-right {
+      float: right;
+    }
+
+    .media-heading {
+      color: $black;
+      margin-top: 12px;
+    }
+  }
+
+  &.mdl-card {
+    padding: 1em 1em .5em;
+    width: 100%;
+  }
+
+}
+
+.mdl-card-overlay {
+  align-items: flex-end;
+  background-color: transluce($black, .5);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.mdl-card-overlay-images {
+  display: block;
+
+  img {
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    transition: translate ease-in .25s;
+    width: 55px;
+
+    // &:hover {
+    //   transform: translateY(-5px);
+    // }
+  }
+}
+
+.post-action-container-a {
+  display: flex;
+
+  .post-action-a {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+  }
+
+  .post-action-a:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .post-action-a-trending {
+    color: $primary-color !important;
+    font-size: 12px;
+  }
+}
+
+
+.P5 {
+  background-image: url("P5.png");
+  position: absolute;
+  left: 607px;
+  top: 233px;
+  width: 55px;
+  height: 40px;
+  z-index: 550;
+}

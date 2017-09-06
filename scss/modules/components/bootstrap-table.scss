@@ -1,0 +1,69 @@
+.bstable {
+  border-collapse: collapse !important;
+  td, th {
+    background-color: #fff !important;
+  }
+}
+
+.bstable {
+  width: 100%;
+  max-width: 100%;
+  // margin-bottom: 20px;
+  > {
+    tbody > tr > {
+      td, th {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+      }
+    }
+    tfoot > tr > {
+      td, th {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+      }
+    }
+    thead > tr > {
+      td {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+      }
+      th {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+        vertical-align: bottom;
+        border-bottom: 2px solid #ddd;
+      }
+    }
+    caption + thead > tr:first-child > {
+      td, th {
+        border-top: 0;
+      }
+    }
+    colgroup + thead > tr:first-child > {
+      td, th {
+        border-top: 0;
+      }
+    }
+    thead:first-child > tr:first-child > {
+      td, th {
+        border-top: 0;
+      }
+    }
+    tbody + tbody {
+      border-top: 2px solid #ddd;
+    }
+  }
+  .bstable {
+    background-color: #fff;
+  }
+}
+
+.table-borderless tbody tr td,.table-borderless tbody tr th,.table-borderless thead tr th,.table-borderless thead tr td,.table-borderless tfoot tr th,.table-borderless tfoot tr td {border: none;}

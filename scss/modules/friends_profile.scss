@@ -1,0 +1,92 @@
+.friend-profile-info {
+  td {
+    padding: 5px;
+  }
+
+  .title {
+    color: $grey1;
+    font-size: 13px;
+    text-align: right;
+  }
+
+  .value {
+    color: transluce($black, .871);
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.follow-status {
+  color: #666666;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.fp-heading-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.fp-upper-portion {
+  .welcome-bg {
+    transform: translateY(0);
+  }
+
+  .username_profile {
+    padding-top: 12px;
+    padding-bottom: 4px;
+    margin: 0;
+  }
+
+  >.mdl-cell {
+    padding-top: 15px;
+  }
+
+  .floating-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+
+  .profile_sidebar_status {
+    padding: 0 20px;
+  }
+}
+
+#invite-modal {
+  width: 20%;
+  top: 50px;
+  right: 8px;
+  left: initial;
+  margin: 10px;
+
+  .help-text {
+    position: absolute;
+    font-size: 12px;
+    color: $grey1;
+  }
+
+  .mdl-textfield {
+    .mdl-button {
+      background-color: $white;
+      top: 14px;
+      right: 0;
+    }
+  }
+
+  .mdl-dialog__content {
+    >div {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+}
+
+
+.selected-social {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

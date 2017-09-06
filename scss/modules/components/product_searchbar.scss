@@ -1,0 +1,32 @@
+.product-search-bar {
+  .mdl-textfield {
+    .mdl-textfield__input {
+      box-sizing: border-box;
+      color: $black;
+      font-size: 14px;
+      padding: 10px;
+      padding-right: 40px;
+    }
+
+    .mdl-textfield__label {
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-top: 6px;
+
+      &::after {
+        bottom: 0;
+      }
+    }
+
+    .mdl-button {
+      background-color: $white;
+      color: $primary-color;
+      right: 0;
+      top: 20px;
+
+      .material-icons {
+        // font-size: 20px;
+      }
+    }
+  }
+}

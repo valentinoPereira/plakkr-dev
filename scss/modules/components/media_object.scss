@@ -1,0 +1,95 @@
+// The blocks on followers page
+.media-body,
+.media-left,
+.media-right {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media {
+  @include rounded-corner(2px);
+  padding: 15px;
+}
+
+.media-body {
+  padding-left: 5px;
+}
+
+.media,
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.media-left,
+.media>.pull-left {
+  padding-right: 10px;
+}
+
+.media-object {
+  border: 2px solid $black;
+  display: block;
+  height: 76px;
+  width: 76px;
+}
+
+.media-heading {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  margin-top: 5px;
+}
+
+.media-text {
+  color: #9a9a9a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.mod-media-a {
+  padding: 8px;
+
+  .media-body,
+  .media-left,
+  .media-right {
+    vertical-align: middle;
+  }
+
+  .media-object {
+    border-color: rgb(209, 209, 209);
+    height: 45px;
+    width: 45px;
+  }
+
+  .media-body {
+    text-align: left;
+  }
+
+  .media-heading {
+    margin: 0;
+  }
+}
+
+.mod-media-b {
+  @extend .mod-media-a;
+
+  .comment-text {
+    padding: 10px 0;
+  }
+
+  &.reply-1 {
+    padding-left: 10%;
+  }
+
+  &.reply-2 {
+    padding-left: 20%;
+  }
+}
+
+.mod-media-c {
+  .media-body,
+  .media-left,
+  .media-right {
+    vertical-align: top;
+  }
+}

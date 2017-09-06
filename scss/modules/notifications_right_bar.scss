@@ -1,0 +1,69 @@
+.nots_right_bar{
+  color: $grey1;
+  width: 25%;
+  overflow-y: scroll;
+  margin: 0;
+  position: fixed;
+  z-index: 30;
+  height: 100vh;
+  border-left: 1px solid $light-grey;
+  right: 2px;
+  background-color: $white;
+  text-align: left;
+  top: 55px;
+
+  .nots_right_bar_title {
+    position: relative;
+    margin: 20px 12px 3px;
+
+    h5 {
+      margin: 0;
+      /* padding: 2px; */
+      margin-left: 10px;
+      margin-top: 4px;
+      line-height: 1.125;
+      font-size: 16px;
+      letter-spacing: .1px;
+      color: inherit;
+      display: inline-block;
+    }
+
+    .material-icons {
+      vertical-align: top;
+      color: inherit;
+      color: #757575;
+    }
+
+    .nots_right_bar_back {
+      position: absolute;
+      right: 6px;
+      top: -5px;
+      color: #757575;
+    }
+  }
+
+}
+
+.nots_right_bar-minimized {
+  @extend .profile_sidebar-minimized;
+  right: $body-scrollbar-width;
+  top: 55px;
+
+  .mdl-button {
+    height: $collapsed-bars;
+    width: $collapsed-bars;
+  }
+}
+
+
+.mypan {
+  height: calc(100vh / 2  - 116px);
+  overflow-y: auto;
+  }
+  .mypan-2 {
+  height: calc(100vh / 2);
+  overflow-y: auto;
+  }
+  .opened_feed_right_sidebar .media-outer-container {
+  margin: 8px 8px 15px 8px;
+  }

@@ -1,0 +1,117 @@
+// .buttons {
+//   margin-top: 15px;
+
+//    &:nth-last-child(1) {
+//     -webkit-transition-delay: 25ms;
+//     transition-delay: 25ms;
+//     background-image: url('../images/50x50_white.png');
+//     background-color: rgb(132, 63, 172);
+//     background-color: $primary-color;
+//     background-size: contain;
+//     background-size: 45px;
+//     background-position: 50% 45%;
+//   }
+
+//   &:not(:last-child) {
+//     box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+//     border-radius: 50%;
+//     display: block;
+//     position: relative;
+//     transition: all .1s ease-out;
+//     width: 40px;
+//     height: 40px;
+//     margin: 40px auto 0;
+//     opacity: 0;
+//     transform: translateY(50px);
+//     background-color: rgb(132, 63, 172);
+
+//     &:active, &:focus, &:hover {
+//       box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+//     }
+
+//     &:nth-last-child(2) {
+//       -webkit-transition-delay: 50ms;
+//       transition-delay: 20ms;
+//       // background-image: url('https://cbwconline.com/IMG/Facebook-Flat.png');
+//       background-color: rgb(132, 63, 172);
+//       background-size: contain;
+//     }
+
+//     &:nth-last-child(3) {
+//       -webkit-transition-delay: 75ms;
+//       transition-delay: 40ms;
+//       // background-image: url('https://cbwconline.com/IMG/Twitter-Flat.png');
+//       background-color: rgb(132, 63, 172);
+//       background-size: contain;
+//     }
+
+//     &:nth-last-child(4) {
+//       -webkit-transition-delay: 100ms;
+//       transition-delay: 60ms;
+//       // background-image: url('https://cbwconline.com/IMG/Google%20Plus.svg');
+//       background-color: rgb(132, 63, 172);
+//       background-size: contain;
+//     }
+
+//     &:nth-last-child(5) {
+//       -webkit-transition-delay: 100ms;
+//       transition-delay: 60ms;
+//       // background-image: url('https://cbwconline.com/IMG/Google%20Plus.svg');
+//       background-color: rgb(132, 63, 172);
+//       background-size: contain;
+//     }
+//   }
+// }
+
+.floating-plakkr-container {
+  bottom: 3%;
+  position: fixed;
+  right: 2%;
+  z-index: 40000;
+
+  // &:hover .buttons:not(:last-child) {
+  //   margin: 15px auto 0;
+  //   opacity: 1;
+  //   transform: none;
+  // }
+
+  button, button:hover, button:focus:not(:active) {
+    background-color: $primary-color;
+    background-image: url('../images/50x50_white.png');
+    background-position: 59% 50%;
+    background-size: 42px;
+    height: 48px;
+    width: 48px;
+  }
+}
+
+.floating-plakkr-container-1 {
+  bottom: calc(5% + 48px);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 2%;
+
+  div {
+    align-items: center;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-title {
+    background-color: rgb(132, 63, 172);
+    border-radius: 2px;
+    font-size: 12px;
+    letter-spacing: .05em;
+    padding: 6px 12px;
+  }
+
+  .mdl-button {
+    background-color: rgb(132, 63, 172);
+    // color: $white;
+    height: 38px;
+    margin: 5px;
+    width: 38px;
+  }
+}

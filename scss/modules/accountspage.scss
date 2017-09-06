@@ -1,0 +1,134 @@
+.personal-account-info {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+
+  h4 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 4px 0;
+    text-transform: uppercase;
+  }
+
+  .avatar {
+    border: 2px solid $black;
+    display: inherit;
+    height: 100px;
+    margin: 8px auto;
+    width: 100px;
+  }
+
+  .email {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 4px;
+  }
+
+  .profile_sidebar_status {
+    font-weight: 500;
+    padding: 4px 0;
+  }
+}
+
+.side-buttons {
+  display: inline-block;
+  float: right;
+}
+
+.general-panel-actions {
+  padding-right: 12px;
+  padding-top: 6px;
+}
+
+.privacy-account-info,
+.notifications-account-info {
+  .mdl-cell {
+    padding: 0 10px;
+  }
+
+  .action {
+    margin-left: 20px;
+
+    .mdc-switch {
+      padding: 0 10px;
+    }
+  }
+
+  .mdl-radio {
+    &:not(:first-child) {
+      margin-left: 10px;
+      padding-left: 24px;
+    }
+  }
+
+  .mdl-checkbox__label,
+  .mdl-radio {
+    font-size: 14px;
+  }
+}
+
+.dashboard-panel-titles {
+  font-size: 16px;
+  font-weight: 500;
+
+  span {
+    color: $primary-color;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  img {
+    height: 35px;
+    padding-right: 20px;
+    width: 35px;   
+  }
+}
+
+.panel-toggler {
+  .panel-toggler-maximize {
+    display: none;
+  }
+
+  .material-icons {
+    color: rgb(117, 117, 117);
+  }
+
+  &.minimised {
+    .panel-toggler-minimize {
+      display: none;
+    }
+
+    .panel-toggler-maximize {
+      display: inline-block;
+    }
+  }
+}
+
+.user-profile-data {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  width: 60%;
+
+  .user-profile-data-item {
+    display: flex;
+    align-items: center;
+    &.one, &.two {
+      flex: 50%;
+    }
+
+    &.three {
+      padding-top: 4px;
+    }
+  }
+}
+
+.edit-profile-details {
+  position: absolute;
+  right: 112px;
+  top: 18px;
+
+  .material-icons {
+    color: rgb(117, 117, 117);
+    font-size: 21px;
+  }
+}
