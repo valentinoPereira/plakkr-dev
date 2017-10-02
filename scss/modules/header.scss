@@ -1,6 +1,7 @@
 .plakkr-header {
   background-color: $primary-color;
   min-height: $general-height;
+      display: flex;
 }
 
 // .mdl-layout__drawer-button{
@@ -42,7 +43,6 @@
   @include rounded-corner(50%);
   background-color: $white;
   height: 50px;
-  left: 25px;
   position: absolute;
   width: 50px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
@@ -67,3 +67,64 @@
 //     top: 70px;
 //   }
 // }
+
+.prelogin {
+  .logo {left: 15px;}
+  .mdl-layout__header-row {padding: 0 16px 0 30px;}
+}
+
+//  ********
+//  * MOBILE FIRST DEVELOPMENT SETTINGS
+//  *
+@media only screen and (min-width: 320px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+  .logo {left: 45px;}
+
+  .plakkr-header .mdl-layout__header-row {
+    padding: 0 10px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .plakkr-header {
+    background-color: $primary-color;
+    min-height: $general-height;
+
+    .mdl-layout__header-row {
+      height: 55px;
+      padding: 0 10px 0 80px;
+
+      .mdl-navigation__link {
+        line-height: $general-height;
+        opacity: 1;
+        padding: 0 10px;
+        cursor: pointer;
+      }
+
+      .mdl-textfield {
+        padding: 17px 0;
+      }
+    }
+  }
+
+  .logo {left: 20px;}
+}
+
+@media only screen and (min-width: 1100px) {
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+}

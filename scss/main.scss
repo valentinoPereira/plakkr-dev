@@ -44,9 +44,11 @@
 @import './modules/components/dialogs';
 @import './modules/components/jgrowl';
 @import './modules/components/comments-component';
+@import './modules/components/follower-component';
 
 
 //  Media Queries.
 //========================================================================== */
 @import './framework/resets';
+@import './framework/bootstrap-grid';
 @import './framework/mediascreen';

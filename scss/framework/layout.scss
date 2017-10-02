@@ -80,6 +80,8 @@ textarea {
   animation: mypulse 1s infinite;
 }
 
+.mdl-layout__content {overflow: hidden;}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -152,26 +154,8 @@ textarea {
 }
 
 .middle-section {
-  margin: 0 $collapsed-bars;
-  // width: 100%;
-
-  &.both-open {
-    margin: 0 auto;
-    padding-left: 16px;
-    width: 50%;
-  }
-
-  &.left-open {
-    margin-left: 25%;
-    margin-right: $collapsed-bars;
-    width: calc(75% - #{$collapsed-bars});
-  }
-
-  &.right-open {
-    margin-left: $collapsed-bars;
-    margin-right: 25%;
-    width: calc(75% - #{$collapsed-bars});
-  }
+  height: calc(100vh - 50px);
+  overflow: auto;
 }
 
 .sidebar-collapsed {
@@ -397,15 +381,15 @@ textarea {
   padding: 16px;
 }
 
-.edit-description {
-  margin-left: 0;
-  position: absolute;
-  top: -6px;
+// .edit-description {
+//   margin-left: 0;
+//   position: absolute;
+//   top: -6px;
 
-  > .material-icons {
-    font-size: 16px;
-  }
-}
+//   > .material-icons {
+//     font-size: 16px;
+//   }
+// }
 
 .add-description {
   position: absolute;
@@ -454,6 +438,7 @@ textarea {
     height: auto;
     max-height: 300px;
     width: auto;
+    max-width: 100%;
   }
 }
 @keyframes nudge {
@@ -492,3 +477,5 @@ textarea {
 .post_unlike {
   color: $primary-color;
 }
+
+.overflow { overflow: auto }
