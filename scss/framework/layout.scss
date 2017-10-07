@@ -20,7 +20,7 @@ textarea {
 
 .mini-scroll::-webkit-scrollbar {
   background-color: $light-grey;
-  width: 2px;
+  width: 4px;
 }
 
 .mdl-typography--text-center {
@@ -479,3 +479,13 @@ textarea {
 }
 
 .overflow { overflow: auto }
+
+.plakr-symb {
+  position: absolute;
+  z-index: 1;
+  display:none;
+}
+.product-symb {
+  position: absolute;
+  display:none;
+}
