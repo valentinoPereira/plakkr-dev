@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 240px;
   height: 100%;
   max-height: 100%;
   position: absolute;
@@ -13,7 +12,6 @@
   box-sizing: border-box;
   border-right: 1px solid #e0e0e0;
   background: #fafafa;
-  transform: translateX(250px);
   transform-style: preserve-3d;
   will-change: transform;
   transition-duration: .2s;
@@ -23,10 +21,6 @@
   overflow: visible;
   overflow-y: auto;
   z-index: 5;
-}
-
-.rightbar-active {
-  transform: translateX(0);
 }
 
 .mdl-layout__obfuscator-right {
@@ -53,5 +47,26 @@
     letter-spacing: 1px;
     line-height: 56px;
     padding-left: 16px;
+  }
+}
+
+//  ********
+//  * MOBILE FIRST DEVELOPMENT SETTINGS
+//  *
+@media only screen and (min-width: 320px) {
+
+  .mdl-layout__drawer-right {
+    width: 300px;
+    transform: translateX(300px);
+    &.rightbar-active {transform: translateX(0);}
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mdl-layout__drawer-right {
+    width: 240px;
+    transform: translateX(250px);
+
+    &.rightbar-active {transform: translateX(0);}
   }
 }
