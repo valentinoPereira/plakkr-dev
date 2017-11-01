@@ -226,7 +226,7 @@
     }
 
     #show-forgot-password {
-      margin-top: 8px;
+      // margin-top: 8px;
     }
 
     #show-register {
@@ -237,6 +237,8 @@
   .mdl-layout__header {
     display: block;
   }
+
+  .mobile-zero-padding {padding: 0;}
 }
 
 
@@ -296,6 +298,11 @@
   .product-symb {
     width: 250px;
     height: 250px;
+  }
+
+  #post_div .post-page--top-section {
+    margin:3px;
+    font-weight: 500; 
   }
 }
 
@@ -400,6 +407,11 @@
     height: 250px;
   }
 
+  #post_div .post-page--top-section {
+    margin: 10px 5px 0;
+    font-weight: 500; 
+  }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -430,7 +442,7 @@
 
     &.both-open {
       margin: 0 auto;
-      padding-left: 16px;
+      padding-left: 0;
       width: 50%;
     }
 

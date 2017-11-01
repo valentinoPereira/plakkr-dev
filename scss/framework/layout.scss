@@ -504,3 +504,26 @@ textarea {
     transform: translateY(-50px);
   }
 }
+
+.flex-wrap {flex-wrap: wrap;}
+
+.import-pictures-tab {
+  .is-active > img {
+    height: 25px;
+    width: 25px;
+  } 
+}
+
+.other-options {
+  .mdl-layout-subhead {
+    padding-left: 14px;
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mdl-navigation {
+    padding-top: 8px;
+  }
+}

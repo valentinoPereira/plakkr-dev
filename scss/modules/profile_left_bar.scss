@@ -173,6 +173,11 @@
   }
 }
 
+.leftbar-mobile {
+  .profile_sidebar {display: none;}
+  .profile_sidebar-minimized, .other-options {display: block;}
+}
+
 
 
 @media only screen and (max-width: 479px) {
