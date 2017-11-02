@@ -80,7 +80,7 @@ textarea {
   animation: mypulse 1s infinite;
 }
 
-.mdl-layout__content {overflow: hidden;}
+// .mdl-layout__content {overflow: hidden;}
 
 .container {
   margin-left: auto;
@@ -89,74 +89,10 @@ textarea {
   padding-right: 15px;
 }
 
-.grid {
-  column-gap: 1em;
-  // font-size: .85em;
-  margin-bottom: 1.5em;
-  margin-top: 6px;
-  padding: 0;
-
-  // &.five {
-  //   column-count: 5;
-  // }
-
-  // &.four {
-  //   column-count: 4;
-  // }
-
-  // &.three {
-  //   column-count: 3;
-  // }
-
-  // &.two {
-  //   column-count: 2;
-  // }
-
-  // &.one {
-  //   column-count: 1;
-  // }
-
-  &.after {
-    clear: both;
-    content: '';
-    display: block;
-  }
-}
-
-.grid-item {
-  box-sizing: border-box;
-  display: inline-block;
-  margin: 0 0 1.5em;
-  // padding: 1em;
-  width: 100%;
-  transition: all ease .24s;
-  top: 0;
-  left: 0;
-
-  &:hover {
-    box-shadow: 4px 4px 20px $grey1;
-    // transform: translateZ(50px);
-    // box-shadow: 1px 1px 30px #888;
-    cursor: pointer;
-
-    .mdl-card-overlay {
-      display: flex;
-    }
-
-    .mdl-card {
-      border-radius: 0;
-    }
-
-    .post-hits {
-      display: none;
-    }
-  }
-}
-
-.middle-section {
-  height: calc(100vh - 50px);
-  overflow: auto;
-}
+// .middle-section {
+//   height: calc(100vh - 50px);
+//   overflow: auto;
+// }
 
 .sidebar-collapsed {
   background-color: $primary-color;
@@ -500,8 +436,10 @@ textarea {
   z-index: 999;
 
   img {
+    height: 60px;
     margin: auto;
     transform: translateY(-50px);
+    width: 60px;
   }
 }
 
