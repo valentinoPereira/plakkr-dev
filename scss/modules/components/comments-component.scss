@@ -64,6 +64,7 @@
   padding: 8px 16px;
 
   .comment-text {
+    word-break: break-all;
     word-break: break-word;
   }
 }
